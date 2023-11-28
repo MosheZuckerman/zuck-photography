@@ -1,92 +1,80 @@
-
-  <style>
- 
-    body {
-      margin: 0px;
-      padding: 0px;
-      box-sizing: border-box;
-    }
-	#topRightImage {
-      position: fixed;
-      top: 50px;
-      right: 150px;
-      width: 300px; 
-      height: auto;
-    }
-
-
-    nav {
-      background-color: black;
-      color: white;
-      padding: 15px;
-      text-align: center;
-    }
-
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav ul li {
-      display: inline-block;
-      margin-right: 20px;
-    }
-
-    h2 {
-    text-align: center;
-	  font-size: 30px; 
-    }
-
-    section {
-      padding: 20px;
-    }
-
-    p {
-    text-align: justify;
-      font-size: 20px; 
-    }
-	
-	
-	
-    h1 {
-      font-family: "Montserrat", sans-serif;
-    }
-
-    .w3-row-padding img {
-      margin-bottom: 12px;
-    }
-
-    .w3-collage img {
-      width: 100%;
-      height: auto;
-      border: 3px solid white;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    }
-
-  
-    .w3-opacity {
-      background-color: black;
-      color: white;
-      opacity: 0.8;
-    }
-	@media only screen and (max-width: 200px) {
-    .top-left li {
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    .top-left a {
-        font-size: 30px;
-    }
-
-    header img.logo {
-        width: 300px;
-    }
-
-    .gallery img {
-        width: 150px;
-    }
+/* Default styles for all screens */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-  </style>
+#topRightImage {
+  position: fixed;
+  top: 50px; /* Adjust the initial position for larger screens */
+  right: 150px;
+  width: 300px;
+  height: auto;
+}
+
+nav {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+section {
+  padding: 20px;
+}
+
+p {
+  text-align: justify;
+  font-size: 20px;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.w3-row-padding img {
+  margin-bottom: 12px;
+}
+
+.w3-collage img {
+  width: 100%;
+  height: auto;
+  border: 3px solid white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.w3-opacity {
+  background-color: black;
+  color: white;
+  opacity: 0.8;
+}
+
+/* Styles for screens with a maximum width of 767px (phones) */
+@media only screen and (max-width: 767px) {
+  #topRightImage {
+    top: 5px; /* Adjust the top position for small screens */
+    right: 110px; /* Adjust the right position for small screens */
+    width: 80px; /* Adjust the width for small screens */
+  }
+
+  .w3-collage img {
+    border-width: 2px; /* Adjust border size for phones */
+  }
+}
