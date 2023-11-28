@@ -35,7 +35,7 @@
 
     h2 {
     text-align: center;
-	  font-size: 30px; /* Adjust the size as needed */
+	  font-size: 30px; 
     }
 
     section {
@@ -44,7 +44,7 @@
 
     p {
     text-align: justify;
-      font-size: 20px; /* Adjust the size as needed */
+      font-size: 20px; 
     }
 	
 	
@@ -64,10 +64,29 @@
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     }
 
-    /* Darker background for the header */
+  
     .w3-opacity {
       background-color: black;
       color: white;
       opacity: 0.8;
     }
+	@media only screen and (max-width: 200px) {
+    .top-left li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .top-left a {
+        font-size: 30px;
+    }
+
+    header img.logo {
+        width: 300px;
+    }
+
+    .gallery img {
+        width: 150px;
+    }
+}
+
   </style>
